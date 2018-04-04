@@ -21,7 +21,6 @@ function price( name, time , discount) {
   } else if (discount === "child") {
     cost = cost - 3;
   }
-
   return cost;
 }
 
@@ -46,7 +45,7 @@ $(document).ready(function() {
 
 // Removes a given ticket on click
     $(".ticket").click(function() {
-      $(this).remove();
+      $(this).slideUp();
     });
   });
 });
